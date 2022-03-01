@@ -1,7 +1,7 @@
 package generics;
 
 public class TestMaximum<T extends Comparable<T>> {
-	T x, y, z;
+	private T x, y, z;
 
 //constructor
 	public TestMaximum(T x, T y, T z) {
@@ -10,7 +10,7 @@ public class TestMaximum<T extends Comparable<T>> {
 		this.z = z;
 	}
 
-//checking max of three integers
+//checking max of three Generic data
 	public static <T extends Comparable<T>> T testMaximum(T x, T y, T z) {
 		T max = x;// Initializing x as greater
 		if (y.compareTo(max) > 0)
@@ -24,6 +24,6 @@ public class TestMaximum<T extends Comparable<T>> {
 	}
 
 	public static <T> void printMax(T x, T y, T z, T max) {
-		System.out.printf("the max of %s , %s and %s is %s\n", x, y, z, max);
+		System.out.printf("The max of %s , %s and %s is %s\n", x, y, z, max);
 	}
 }
