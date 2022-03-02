@@ -10,20 +10,20 @@ public class TestMaximum {
 		this.z = z;
 	}
 
-	// checking maximum of three integers
-	public static Integer testMaximum(Integer x, Integer y, Integer z) {
-		Integer max = x;// Initializing x as greater
+	// checking max of three float
+	public static Float testMaximum(Float x, Float y, Float z) {
+		Float max = x;// initialising x as greater
 		if (y.compareTo(max) > 0)
-			max = y;// y is greater
+			max = y;// as of now y is greater
 
 		if (z.compareTo(max) > 0)
-			max = z;// z is greater
+			max = z;// now z is greater
 		printMax(x, y, z, max);
 		return max;
 
 	}
 
-	public static void printMax(Integer x, Integer y, Integer z, Integer max) {
+	public static void printMax(Float x, Float y, Float z, Float max) {
 		System.out.printf("the max of %s , %s and %s is %s\n", x, y, z, max);
 	}
 }
